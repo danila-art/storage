@@ -1,0 +1,162 @@
+body {
+    background-color: black;
+}
+
+.allproject {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+}
+
+.header {
+    width: 100%;
+}
+
+.redline {
+    display: flex;
+    background-color: #cd113d;
+    width: 100%;
+    height: 10%;
+}
+
+.regauto {
+    margin-left: auto;
+}
+
+.redline span {
+    color: white;
+    font-family: Arial;
+    font-size: 12pt;
+
+}
+
+.logoandpoisk {
+    display: flex;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+img, .logo {
+    width: 60%;
+    height: 50%;
+}
+
+.search:after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.search form {
+    width: auto;
+    float: right;
+    margin-right: 20%;
+    margin-top: 25%;
+}
+
+.search input {
+    width: 250px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 2px solid #324b4e;
+    background: #F9F0DA;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+}
+
+.search input:focus {
+    width: 300px;
+}
+
+.search button {
+    width: 62px;
+    height: 37px;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    position: absolute;
+    margin-left: -4%;
+    margin-top: 5px;
+}
+
+.search button:hover {
+    background-color: rgba(195, 195, 195, 0.70);
+}
+
+.search button:before {
+    content: "Поиск";
+    font-family: FontAwesome;
+    color: #324b4e;
+}
+
+.Navigation {
+    display: flex;
+    margin: auto;
+    background-color: #888888;
+    color: white;
+}
+
+.Home {
+    border-style: none;
+    background-color: #cd113d;
+    margin-left: 10%;
+    margin-right: 1%;
+}
+
+.addcatalog {
+    margin-right: 1%;
+}
+
+.addcatalog:hover {
+    background-color: #cd113d;
+}
+
+.toppizza {
+    margin-right: 1%;
+}
+
+.toppizza:hover {
+    background-color: #cd113d;
+}
+
+.toprestoran {
+    margin-right: 1%;
+}
+
+.toprestoran:hover {
+    background-color: #cd113d;
+}
+
+.topsuhiroll {
+    margin-right: 1%;
+}
+
+.topsuhiroll:hover {
+    background-color: #cd113d;
+}
+
+.topzdorovoepit {
+    margin-right: 1%;
+}
+
+.topzdorovoepit:hover {
+    background-color: #cd113d;
+}
+
+.Navigation span {
+    font-family: Arial;
+    font-size: 16pt;
+    color: white;
+}
+
+.companys {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
