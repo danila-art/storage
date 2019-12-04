@@ -16,6 +16,7 @@ else{
 </div>
 </body>
 </html>';
+    exit();
 }
 //---------------------------------------------------------
 if (!empty($_POST['info_company'])){
@@ -28,6 +29,7 @@ else{
     <p>Поле->Информация о Компание = ПУСТО!</p>
 </div>
 ';
+    exit();
 }
 //----------------------------------------------------------
 if (!empty($_POST['mail_company'])){
@@ -40,6 +42,7 @@ else{
     <p>Поле->Адрес электронной почты = ПУСТО!</p>
 </div>
 ';
+    exit();
 }
 //----------------------------------------------------------
 if (!empty($_POST['adres_company'])){
@@ -52,6 +55,7 @@ else{
     <p>Поле->Адрес компании = ПУСТО!</p>
 </div>
 ';
+    exit();
 }
 //----------------------------------------------------------
 if (!empty($_POST['fhone'])){
@@ -64,6 +68,7 @@ else{
     <p>Поле->Номер телефона = ПУСТО!</p>
 </div>
 ';
+    exit();
 }
 //----------------------------------------------------------
 if (!empty($_POST['internet_adres_company'])){
@@ -76,6 +81,7 @@ else{
     <p>Поле->HTTP адрес = ПУСТО!</p>
 </div>
 ';
+    exit();
 }
 if ($name_company != null && $adres_company !=null && $fhone != null && $info_company != null && $internet_adres_company != null && $mail_company != null) {
     $company_my_sql = new mysqli('localhost', 'root', '', 'company');

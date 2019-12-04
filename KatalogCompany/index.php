@@ -50,7 +50,41 @@
         </div>
         <div class="companys">
             <div class="1">
-                <?php ?>
+                <div style="margin-right: auto; ">
+                    <img src="" alt="" style="width: 20%; height: 20%;">
+                    <div style="margin-left: 30%; margin-right: 10%;">
+                        <?php
+                        $link = mysqli_connect('localhost', 'root', '', 'company');
+                        if(!$link){
+                            echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
+                            exit;
+                        }
+                        $sql = mysqli_query($link, 'SELECT `id`, `name_company`,`info_company`,`mail_company`,`adres_company`,`fhone`,`internet_adres_company` FROM `comp`');
+                        while ($result = mysqli_fetch_array($sql)){
+                            echo "<div>
+                                    {$result['name_company']}
+                                  </div> <br>
+                                  <div>
+                                  {$result['info_company']}
+                                  </div><br>
+                                  <div>
+                                  {$result['mail_company']}
+                                  </div><br>
+                                  <div>
+                                  {$result['adres_company']}
+                                  </div><br>
+                                  <div>
+                                  {$result['fhone']}
+                                  </div><br>
+                                  <div>
+                                  {$result['internet_adres_company']}
+                                  </div><br>";
+                            echo "<div>
+                                   <hr style='border-style: solid; border-width: 1px; border-color: rgba(205,205,205,0.4);'>
+                                  </div>";
+                        }
+                        ?>
+                    </div>
             </div>
         </div>
     </div>

@@ -30,7 +30,7 @@
         </div>
         <div class="Navigation">
             <div class="Home">
-                <a href="index.php"><span>Главная - Каталог</span></a>
+                <a href="../index.php"><span>Главная - Каталог</span></a>
             </div>
             <div class="addcatalog">
                 <a href=""><span>Добавить Компанию</span></a>
@@ -51,29 +51,42 @@
     </div>
     <hr>
     <div class="alladd">
-        <span>Добавление Компании</span>
+
         <div class="form_add_company">
             <form action="../PHP/Companys/database_company.php" method="post">
-                <dl>
+                <div class="k1">
+                    <span>Добавление Компании</span>
+                </div>
+                <div class="line1">
                     <dt>Введите название компании:</dt>
                     <dd><input type="text" name="name_company"></dd>
-                    <!--Блок 1 конец-->
+                </div>
+                <!--Блок 1 конец-->
+                <div class="line2">
                     <dt>Введите краткую информацию компании:</dt>
-                    <dd><input type="text" name="info_company"></dd>
-                    <!--Блок 2 конец-->
+                    <dd><input type="text" name="info_company" id="opis"></dd>
+                </div>
+                <!--Блок 2 конец-->
+                <div class="line3">
                     <dt>Введите адрес электронной почты хозяина компании:</dt>
                     <dd><input type="text" name="mail_company"></dd>
-                    <!--Блок 3 конец-->
+                </div>
+                <!--Блок 3 конец-->
+                <div class="line4">
                     <dt>Введите адрес компании:</dt>
                     <dd><input type="text" name="adres_company"></dd>
-                    <!--Блок 4 конец-->
+                </div>
+                <!--Блок 4 конец-->
+                <div class="line5">
                     <dt>Введите номер телефона, чтобы связаться с компание:</dt>
                     <dd><input type="text" name="fhone"></dd>
-                    <!--Блок 5 конец-->
+                </div>
+                <!--Блок 5 конец-->
+                <div class="line6">
                     <dt>Введите http адрес компании:</dt>
                     <dd><input type="text" name="internet_adres_company"></dd>
-                    <!--Блок 6 конец-->
-                </dl>
+                </div>
+                <!--Блок 6 конец-->
                 <input type="submit" value="Готово" id="okey">
             </form>
         </div>
