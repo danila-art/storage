@@ -1,0 +1,67 @@
+Если у вас нет лишнего времения для того чтобы тратить свое драгоценное время на разработку методов анализа, проектирования и рациональной организации систем, относящихся к различным областям деятельности, то наш сайт обязательно поможет решить вашу задачу всего за пару минут.
+//--------------------------------------------------------------------------\
+<div class="allproject">
+    <div class="header">
+        <div class="black_line">
+            <div class="logo">
+                <img src="IMAGES/logo.png" alt="" id="logo">
+            </div>
+            <div class="all_button">
+                <div>
+                    <a href="" class="buttonns">Главная</a>
+                </div>
+                <div>
+                    <a href="" class="buttonns">СМО-это?</a>
+                </div>
+                <div>
+                    <a href="" class="buttonns">Контакты</a>
+                </div>
+                <div>
+                    <a href="" class="buttonns">О нас</a>
+                </div>
+            </div>
+            <div class="oblohka">
+                <div class="span_1">
+                    <br><br><br><span id="span_1">ДОБРО ПОЖАЛОВАТЬ: СМО - ОНЛАЙН КАЛЬКУЛЯТОР</span><br>
+                </div>
+                <div class="span_2">
+                    <span id="span_2">Онлайн-калькулятор - не трать время зря</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    //--------НАПОЛНЯЕМОСТЬ---------
+    <div class="content">
+
+    </div>
+    //--------НАПОЛНЯЕМОСТЬ---------
+    <div class="futer">
+        <div class="futer_line">
+            <div class="block_1">
+                <div>
+                    <a href="">Контакты</a>
+                </div>
+                <div>
+                    <a href="">О нас</a>
+                </div>
+                <div>
+                    <a href="">Блог</a>
+                </div>
+            </div>
+            <div class="block_2">
+                <div>
+                    <a href="">danila.sivov.96@mail.ru</a>
+                </div>
+                <div>
+                    <a href="">8-(937)-506-91-09</a>
+                </div>
+                <div>
+                    <a href="">Ул. Савушкина д.34</a>
+                </div>
+            </div>
+        </div>
+        <div class="block_3">
+
+        </div>
+    </div>
+</div>

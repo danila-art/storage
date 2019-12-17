@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>СМО - онлайн калькулятор</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+<body>
+<div class="allproject">
+    <div class="header">
+        <div class="black_line">
+            <div class="logo">
+                <img src="IMAGES/logo.png" alt="" id="logo">
+            </div>
+            <div class="all_button">
+                <div>
+                    <a href="" class="buttonns">Главная</a>
+                </div>
+                <div>
+                    <a href="" class="buttonns">СМО-это?</a>
+                </div>
+                <div>
+                    <a href="" class="buttonns">Контакты</a>
+                </div>
+                <div>
+                    <a href="" class="buttonns">О нас</a>
+                </div>
+            </div>
+            <div class="oblohka">
+                <div class="span_1">
+                    <br><br><br><span id="span_1">ДОБРО ПОЖАЛОВАТЬ: СМО - ОНЛАЙН КАЛЬКУЛЯТОР</span><br>
+                </div>
+                <div class="span_2">
+                    <span id="span_2">Онлайн-калькулятор - не трать время зря</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--НАПОЛНЯЕМОСТЬ-->
+    <div class="content">
+        <h2>Системы массового обслуживания</h2>
+        <h3>Основные формулы</h3>
+        <p>В качестве показателей эффективности СМО с ожиданием, кроме основных показателей — абсолютной A и
+            относительной Q пропускной способности, вероятности отказа <img
+                    src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-610afa8bc1cad1ddc19403a06ef94e2d_l3.png"
+                    class="ql-img-inline-formula quicklatex-auto-format"
+                    alt="&#80;&#95;&#123;&#92;&#116;&#101;&#120;&#116;&#123;&#111;&#116;&#107;&#125;&#125;"
+                    title="Rendered by QuickLaTeX.com" height="16" width="31" style="vertical-align: -4px;"/>, среднего
+            числа занятых каналов к (для многоканальной системы) будем искать также следующие:</p>
+        <p>1) <img src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-23748735cb59c3223a950f4b272927e4_l3.png"
+                   class="ql-img-inline-formula quicklatex-auto-format"
+                   alt="&#76;&#95;&#123;&#92;&#116;&#101;&#120;&#116;&#123;&#115;&#105;&#115;&#116;&#46;&#125;&#125;"
+                   title="Rendered by QuickLaTeX.com" height="16" width="34" style="vertical-align: -4px;"/> — среднее
+            число заявок в системе;<br/>
+            2) <img src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-acd234335b0cf8eee9b879263e4c927e_l3.png"
+                    class="ql-img-inline-formula quicklatex-auto-format"
+                    alt="&#84;&#95;&#123;&#92;&#116;&#101;&#120;&#116;&#123;&#115;&#105;&#115;&#116;&#46;&#125;&#125;"
+                    title="Rendered by QuickLaTeX.com" height="16" width="32" style="vertical-align: -4px;"/> — среднее
+            время пребывания заявки в системе;<br/>
+            3) <img src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-c9ffe76ca5cb95a80162894bccbdd0a9_l3.png"
+                    class="ql-img-inline-formula quicklatex-auto-format"
+                    alt="&#76;&#95;&#123;&#92;&#116;&#101;&#120;&#116;&#123;&#111;&#99;&#104;&#46;&#125;&#125;"
+                    title="Rendered by QuickLaTeX.com" height="15" width="36" style="vertical-align: -3px;"/> — среднее
+            число заявок в очереди (длина очереди);<br/>
+            4) <img src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-4b7d507ad87dcb8f174504d75e09827c_l3.png"
+                    class="ql-img-inline-formula quicklatex-auto-format"
+                    alt="&#84;&#95;&#123;&#92;&#116;&#101;&#120;&#116;&#123;&#111;&#99;&#104;&#46;&#125;&#125;"
+                    title="Rendered by QuickLaTeX.com" height="15" width="34" style="vertical-align: -3px;"/> — среднее
+            время пребывания заявки в очереди;</p>
+        <p>Рассмотрим задачу. Имеется n-канальная СМО с неограниченной очередью. Поток заявок поступающих в СМО имеет
+            интенсивность <img
+                    src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-2b5c45836864531b8e37025dabadd24a_l3.png"
+                    class="ql-img-inline-formula quicklatex-auto-format" alt="&#92;&#108;&#97;&#109;&#98;&#100;&#97;"
+                    title="Rendered by QuickLaTeX.com" height="13" width="10" style="vertical-align: 0px;"/>, а поток
+            обслуживании интенсивность <img
+                    src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-461fe1a58a75801541487ddf10d32abd_l3.png"
+                    class="ql-img-inline-formula quicklatex-auto-format" alt="&#92;&#109;&#117;"
+                    title="Rendered by QuickLaTeX.com" height="12" width="11" style="vertical-align: -4px;"/>.
+            Необходимо найти необходимо найти предельные вероятности состояний СМО и показатели ее эффективности.</p>
+        <p>Пусть</p>
+        <p class="ql-center-displayed-equation" style="line-height: 43px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-36dacb4d386cf5881ec418f74f1746f8_l3.png"
+                height="43" width="349" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91; &#112;&#95;&#48;&#61;&#40;&#49;&#43;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#49;&#125;&#123;&#49;&#33;&#125;&#43;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#50;&#125;&#123;&#50;&#33;&#125;&#43;&#92;&#108;&#100;&#111;&#116;&#115;&#43;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#110;&#125;&#123;&#110;&#33;&#125;&#43;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#123;&#110;&#43;&#49;&#125;&#125;&#123;&#110;&#33;&#40;&#110;&#45;&#92;&#114;&#104;&#111;&#41;&#125;&#41;&#94;&#123;&#45;&#49;&#125; &#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p class="ql-center-displayed-equation" style="line-height: 40px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-e95f72af837bcc3a0f8ff1d3c762f6df_l3.png"
+                height="40" width="131" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#112;&#95;&#49;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#49;&#125;&#123;&#49;&#33;&#125;&#42;&#112;&#95;&#48;&#44;&#92;&#108;&#100;&#111;&#116;&#115;&#44;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p class="ql-center-displayed-equation" style="line-height: 40px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-dfff9338e013212a78c9bd56be55202b_l3.png"
+                height="40" width="132" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#112;&#95;&#107;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#107;&#125;&#123;&#107;&#33;&#125;&#42;&#112;&#95;&#48;&#44;&#92;&#108;&#100;&#111;&#116;&#115;&#44;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p class="ql-center-displayed-equation" style="line-height: 36px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-1af2125b96814ec3cc570d6817c23c91_l3.png"
+                height="36" width="98" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#112;&#95;&#110;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#110;&#125;&#123;&#110;&#33;&#125;&#42;&#112;&#95;&#48;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p class="ql-center-displayed-equation" style="line-height: 39px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-bdde4d8038b3d32586b68851bbed777b_l3.png"
+                height="39" width="163" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#112;&#95;&#123;&#110;&#43;&#49;&#125;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#123;&#110;&#43;&#49;&#125;&#125;&#123;&#110;&#42;&#110;&#33;&#125;&#42;&#112;&#95;&#48;&#92;&#108;&#100;&#111;&#116;&#115;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p class="ql-center-displayed-equation" style="line-height: 39px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-d6c8e6fdd15067c92d1d8a458cd92ae0_l3.png"
+                height="39" width="152" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#112;&#95;&#123;&#110;&#43;&#114;&#125;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#123;&#110;&#43;&#49;&#125;&#125;&#123;&#110;&#94;&#114;&#42;&#110;&#33;&#125;&#42;&#112;&#95;&#48;&#44;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p> где </p>
+        <p class="ql-center-displayed-equation" style="line-height: 41px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-1c9b2e7ede32722fff2fe4f334b90f08_l3.png"
+                height="41" width="51" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#92;&#114;&#104;&#111;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#108;&#97;&#109;&#98;&#100;&#97;&#32;&#125;&#123;&#92;&#109;&#117;&#125;&#44;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p> если <img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-21b09fed584020185a9a64e12f5fba61_l3.png"
+                class="ql-img-inline-formula quicklatex-auto-format" alt="&#92;&#114;&#104;&#111;&#62;&#49;"
+                title="Rendered by QuickLaTeX.com" height="16" width="41" style="vertical-align: -4px;"/>, то
+            очередь растет бесконечно. <img
+                    src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-b170995d512c659d8668b4e42e1fef6b_l3.png"
+                    class="ql-img-inline-formula quicklatex-auto-format" alt="&#110;" title="Rendered by QuickLaTeX.com"
+                    height="8" width="11" style="vertical-align: 0px;"/> &#8212; количество обслуживающих каналов. С
+            помощью этих формул находим показатели эффективности.</p>
+        <p>Вероятность того, что заявка окажется в очереди</p>
+        <p class="ql-center-displayed-equation" style="line-height: 43px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-facec34980fad4f189f5847723f3ad47_l3.png"
+                height="43" width="162" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#112;&#95;&#123;&#111;&#99;&#104;&#125;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#123;&#110;&#43;&#49;&#125;&#125;&#123;&#110;&#33;&#40;&#110;&#45;&#92;&#114;&#104;&#111;&#41;&#125;&#42;&#112;&#95;&#48;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p>Среднее число занятых каналов</p>
+        <p class="ql-center-displayed-equation" style="line-height: 41px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-a24eaf73fc352b56ec3338b688c21526_l3.png"
+                height="41" width="81" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#107;&#32;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#108;&#97;&#109;&#98;&#100;&#97;&#32;&#125;&#123;&#92;&#109;&#117;&#32;&#125;&#61;&#92;&#114;&#104;&#111;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p>Среднее число заявок в очереди</p>
+        <p class="ql-center-displayed-equation" style="line-height: 39px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-10539ec760b5c8f7d1eeb652af7dca54_l3.png"
+                height="39" width="224" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#76;&#95;&#123;&#111;&#99;&#104;&#125;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#94;&#123;&#110;&#43;&#49;&#125;&#42;&#112;&#95;&#48;&#125;&#123;&#110;&#42;&#110;&#33;&#125;&#42;&#40;&#49;&#45;&#92;&#102;&#114;&#97;&#99;&#123;&#92;&#114;&#104;&#111;&#125;&#123;&#110;&#125;&#41;&#94;&#123;&#45;&#50;&#125;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p>Среднее число заявок в системе</p>
+        <p class="ql-center-displayed-equation" style="line-height: 16px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-66814e97e69663124b1ad594aabd35ee_l3.png"
+                height="16" width="123" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#76;&#95;&#123;&#115;&#105;&#115;&#116;&#125;&#61;&#76;&#95;&#123;&#111;&#99;&#104;&#125;&#43;&#92;&#114;&#104;&#111;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p>Среднее время пребывания в очереди</p>
+        <p class="ql-center-displayed-equation" style="line-height: 36px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-68ea0be53ff1c0fe1bbe3f0825aaadaa_l3.png"
+                height="36" width="119" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#84;&#95;&#123;&#111;&#99;&#104;&#125;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#49;&#125;&#123;&#92;&#108;&#97;&#109;&#98;&#100;&#97;&#32;&#125;&#42;&#76;&#95;&#123;&#111;&#99;&#104;&#125;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <p>Среднее время пребывания заявки в очереди</p>
+        <p class="ql-center-displayed-equation" style="line-height: 36px;"><span
+                class="ql-right-eqno"> &nbsp; </span><span class="ql-left-eqno"> &nbsp; </span><img
+                src="http://chessmsv.ru/wp-content/ql-cache/quicklatex.com-1d0673485844f36a39d327f12ad24f52_l3.png"
+                height="36" width="122" class="ql-img-displayed-equation quicklatex-auto-format"
+                alt="&#92;&#91;&#84;&#95;&#123;&#115;&#105;&#115;&#116;&#125;&#61;&#92;&#102;&#114;&#97;&#99;&#123;&#49;&#125;&#123;&#92;&#108;&#97;&#109;&#98;&#100;&#97;&#32;&#125;&#42;&#76;&#95;&#123;&#115;&#105;&#115;&#116;&#125;&#92;&#93;"
+                title="Rendered by QuickLaTeX.com"/></p>
+        <div>
+            <a class="knopka" href="https://math.semestr.ru/cmo/mcmo.php">Запустить Калькулятор</a>
+        </div>
+    </div>
+    <!--НАПОЛНЯЕМОСТЬ-->
+    <div class="futer">
+        <div class="futer_line">
+            <div class="block_1">
+                <div>
+                    <a href="">Контакты</a>
+                </div>
+                <div>
+                    <a href="">О нас</a>
+                </div>
+                <div>
+                    <a href="">Блог</a>
+                </div>
+            </div>
+            <div class="block_2">
+                <div>
+                    <a href="">danila.sivov.96@mail.ru</a>
+                </div>
+                <div>
+                    <a href="">8-(937)-506-91-09</a>
+                </div>
+                <div>
+                    <a href="">Ул. Савушкина д.34</a>
+                </div>
+            </div>
+        </div>
+        <div class="block_3">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
